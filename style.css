@@ -1,0 +1,118 @@
+:root{
+  --color1:rgb(240, 205, 6);
+  --color2:rgb(235, 226, 226);
+  --color3:rgb(228, 56, 122);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0px;
+  background-color: rgba(3, 12, 51, 0.623);
+}
+.container::before {
+  content: '';
+  background: url('/assets/pexels-maxyne-barcel-10402282\ 1.png') 
+      no-repeat center center/cover;
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+section{
+  width: 85%;
+}
+
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li{
+  font-size: 1vw;
+  color: var(--color1);
+  margin: 0px 30px;
+  font-weight: 400;
+}
+.button-small{
+  background-color: var(--color3);
+  color:var(--color2);
+  outline: none;
+  border: none;
+  width: 7vw;
+  height: 2.5vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.hero{
+  width: 100%;
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-heading{
+  width: 75%;
+  text-align: center;
+  font-size:6vw;
+  color:var(--color1);
+  font-weight:lighter;
+  letter-spacing:-3px;
+  line-height:130px;
+  font-family: 'Dela Gothic One';
+}
+.button-large{
+  width:20vw;
+  background-color: var(--color3);
+  color:var(--color2);
+  outline: none;
+  border: none;
+  height: 4.2vw;
+  font-size: 2vw;
+  cursor: pointer;
+  font-weight: 800;
+  margin:50px 0px;
+}
+
+/* .bottom{
+  position: relative;
+} */
+.bottom div{
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+}
