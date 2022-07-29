@@ -23,7 +23,7 @@
 }
 .container::before {
   content: '';
-  background: url('/assets/pexels-maxyne-barcel-10402282\ 1.png') 
+  background: url('./assets/pexels-maxyne-barcel-10402282\ 1.png') 
       no-repeat center center/cover;
   position: absolute;
 
